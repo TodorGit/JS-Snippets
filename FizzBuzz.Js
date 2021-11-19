@@ -24,14 +24,27 @@ console.log(output);
 
 ///// With a for loop
 
-function fizzBuzz2(n) {
-  for (let i = 1; i <= n; i++) {
-    let str = "";
+var output = [];
 
-    if (i % 3 === 0) str += "fizz"
-    if (i % 5 === 0) str += "buzz"
-    if (str === "") str = i;
-  
-    console.log(str);
-  }
+function fizzBuzz() {
+
+ for(var count = 1; count < 101; count++) {
+
+if (count % 3 === 0 && count % 5 === 0) {
+  output.push("FizzBuzz");
+}
+
+else if (count % 3 === 0) {
+   output.push("Fizz");
+} 
+
+else if (count % 5 === 0) {
+    output.push("Buzz")
+}
+
+else {
+   output.push(count);
+}}
+
+console.log(output);
 }
