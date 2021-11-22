@@ -1,0 +1,16 @@
+function whosPaying(names) {
+    
+    
+    names = ["Angela","Ben","Jenny","Micheal","Chloe"];
+    
+    name = Math.floor(Math.random() * names.length);
+    
+    output = console.log(names[name] + " is going to buy lunch today!");
+    
+    return output;
+    
+
+
+}
+
+whosPaying();
